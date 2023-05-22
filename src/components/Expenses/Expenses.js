@@ -5,7 +5,7 @@ import ExpenseFilter from './ExpensesFilter';
 import Card from '../UI/Card';
 import { useState } from 'react';
 function Expenses(props) {
-  const [filteredYear, setFilteredYear] = useState('2022');
+  const [filteredYear, setFilteredYear] = useState('2023');
   const saveExpenseYearHandler = enteredExpenseYear => {
     setFilteredYear(enteredExpenseYear);
   };

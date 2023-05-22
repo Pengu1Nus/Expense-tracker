@@ -8,7 +8,7 @@ const INITEXPENSES = [
     id: 'e1',
     title: 'Toilet Paper',
     amount: 94.12,
-    date: new Date(2022, 7, 14),
+    date: new Date(2020, 7, 14),
   },
   { id: 'e2', title: 'New TV', amount: 799.49, date: new Date(2023, 2, 12) },
   {
@@ -23,6 +23,12 @@ const INITEXPENSES = [
     amount: 450,
     date: new Date(2023, 5, 12),
   },
+  {
+    id: 'e5',
+    title: 'Laptop',
+    amount: 1500,
+    date: new Date(2021, 2, 11),
+  },
 ];
 
 function App() {
@@ -34,20 +40,6 @@ function App() {
   };
   return (
     <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
       <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
     </div>
